@@ -1,0 +1,6 @@
+# Recorded production versions of the direct scientific dependencies.
+numpy==2.2.6
+scipy==1.15.3
+h5py==3.16.0
+nibabel==5.4.2
+mne==1.10.2

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this analysis code, please cite the accompanying manuscript."
+title: "Analysis code for: The role of geometry, synchrony, and cortical confounding in the recoverability of hippocampal activity from scalp EEG"
+type: software
+authors:
+  - family-names: Bindra
+    given-names: Jasmeet Singh
+    affiliation: "Indian Knowledge System and Mental Health Applications Centre (IKSMHA), Indian Institute of Technology Mandi, Kamand, Himachal Pradesh 175075, India"
+  - family-names: Panwar
+    given-names: Siddharth
+    affiliation: "School of Computing and Electrical Engineering (SCEE), Indian Institute of Technology Mandi, Kamand, Himachal Pradesh 175075, India"
+repository-code: "https://github.com/hellogalaxyitsme/geometry-synchrony-cortical-confounding-Hippocampal-recoverability-Scalp-EEG"
+abstract: >-
+  Numerical analysis source code and code-level validation tests for an evaluation of how
+  source geometry, phase organization and cortical nuisance assumptions affect scalp
+  electroencephalographic expression, detection and anatomical attribution of hippocampal
+  activity.
+keywords:
+  - electroencephalography
+  - hippocampus
+  - inverse problem
+  - source localization
+  - identifiability

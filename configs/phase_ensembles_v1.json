@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "seed": 20260825,
+  "maximum_contrast_dimension": 127,
+  "full_source_elements": 64,
+  "source_gain": 0.35,
+  "depth_gradient": 0.2,
+  "secondary_geometry_weight": 0.15,
+  "sensor_noise_variance": 1.0,
+  "cortical_variance": 2.0,
+  "phase_diagram": {
+    "active_fractions": [
+      0.125,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "orientation_spans_radians": [
+      0.0,
+      1.5707963267948966,
+      3.141592653589793,
+      6.283185307179586
+    ],
+    "synchrony_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "phase_cycles_full_extent": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "normalizations": [
+      "fixed_total",
+      "fixed_element"
+    ],
+    "contrast_dimension": 63,
+    "cortical_rank": 12,
+    "cortical_overlap": 0.5
+  },
+  "confounding_ladder": {
+    "active_fraction": 1.0,
+    "orientation_span_radians": 6.283185307179586,
+    "synchrony_fraction": 0.75,
+    "phase_cycles_full_extent": 0.5,
+    "normalization": "fixed_total",
+    "contrast_dimension": 63,
+    "cortical_ranks": [
+      4,
+      16,
+      127
+    ],
+    "cortical_overlaps": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1.0
+    ]
+  },
+  "montage_uncertainty": {
+    "contrast_dimensions": [
+      15,
+      31,
+      63,
+      127
+    ],
+    "cortical_rank": 16,
+    "cortical_overlap": 0.75,
+    "normalization": "fixed_total",
+    "relative_forward_errors": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "replicates_per_nonzero_error": 20,
+    "scenarios": [
+      {
+        "name": "aligned_stationary",
+        "active_fraction": 1.0,
+        "orientation_span_radians": 0.0,
+        "synchrony_fraction": 1.0,
+        "phase_cycles_full_extent": 0.0
+      },
+      {
+        "name": "curved_stationary",
+        "active_fraction": 1.0,
+        "orientation_span_radians": 6.283185307179586,
+        "synchrony_fraction": 1.0,
+        "phase_cycles_full_extent": 0.0
+      },
+      {
+        "name": "curved_traveling",
+        "active_fraction": 1.0,
+        "orientation_span_radians": 6.283185307179586,
+        "synchrony_fraction": 1.0,
+        "phase_cycles_full_extent": 1.0
+      },
+      {
+        "name": "curved_incoherent",
+        "active_fraction": 1.0,
+        "orientation_span_radians": 6.283185307179586,
+        "synchrony_fraction": 0.0,
+        "phase_cycles_full_extent": 0.0
+      }
+    ]
+  }
+}

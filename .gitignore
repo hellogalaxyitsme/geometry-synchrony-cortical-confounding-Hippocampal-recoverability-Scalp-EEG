@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Analysis outputs and source data are large or access-controlled and are not tracked.
+derivatives/
+results/
+source_data/
+data_root/
+tools/
+
+# Frozen study configurations are distributed with the controlled reproduction bundle.
+configs/*
+!configs/phase_ensembles_v1.json
+
+# Local run artefacts
+*.log
+tmp/
+scratch/
+validation_report.json
+scan_report.json

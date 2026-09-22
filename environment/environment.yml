@@ -1,0 +1,12 @@
+name: hippocampal-recoverability
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - h5py=3.16.0
+  - nibabel=5.4.2
+  - pip
+  - pip:
+      - mne==1.10.2
