@@ -1,9 +1,8 @@
 # Reproducibility map
 
-This repository contains the exact numerical source code. The manuscript-associated archive
-provides the frozen study configuration bundle, cohort manifest, provenance records and
-permitted derived outputs. Full regeneration additionally requires the source datasets listed
-in `DATA_ACCESS.md`.
+This repository contains the numerical analysis source code and code-level validation tests.
+Running analyses on the study datasets requires authorized access to the source resources
+listed in `DATA_ACCESS.md` and locally prepared inputs.
 
 Entry points use explicit command-line arguments, typically
 `python workflows/<workflow>.py --config <config.json> --output <path>`. Run any entry point
@@ -31,13 +30,13 @@ with `--help` for its complete interface.
 | Identifiability and information checks | `workflows/check_theorem_stress.py` |
 | Synthetic limiting cases | `workflows/check_simulation_smoke.py` |
 
-## Reproduction boundary
+## Repository boundary
 
 - The public GitHub repository contains code, a synthetic test fixture and the recorded direct
   software dependencies.
-- The manuscript-associated archive contains frozen study configurations, cohort membership,
-  provenance manifests and redistributable derived outputs.
-- Restricted or credentialed source datasets are not redistributed by either mechanism;
-  obtain them under their original access and reuse conditions.
+- Study datasets and numerical outputs are not distributed in this repository.
+- Restricted or credentialed source datasets are not redistributed; obtain them under their
+  original access and reuse conditions.
 - Structural software versions, mesh construction and dataset releases can affect later
-  significant digits. Use the archived settings and recorded environment for exact reruns.
+  significant digits. The environment specifications record the direct scientific software
+  versions used by the analysis code.

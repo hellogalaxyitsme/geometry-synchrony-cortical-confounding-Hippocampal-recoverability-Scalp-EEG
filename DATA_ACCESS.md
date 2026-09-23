@@ -1,4 +1,4 @@
-# Source data and archived reproduction inputs
+# Source data requirements
 
 The workflows require four source resources. None is redistributed in this code repository.
 
@@ -11,15 +11,14 @@ The workflows require four source resources. None is redistributed in this code 
 4. **Cortical-stimulation EEG and SEEG resource**, available through its OSF/EBRAINS record,
    DOI 10.17605/OSF.IO/WSGZP, under the record's licence and access conditions.
 
-The separate manuscript-associated archive supplies the frozen configuration files, cohort
-manifest, provenance records and subject identifiers permitted for redistribution. Copy that
-bundle into the repository root before a full rerun.
+Source datasets and generated numerical outputs are not included in this repository. Workflow
+entry points accept explicit local paths so that authorized users can work with data obtained
+under the applicable source terms.
 
-## Expected layout
+## Example local layout
 
 | Prefix | Contents |
 | --- | --- |
-| `configs/` | archived frozen study configurations and cohort manifest |
 | `source_data/hcp_ya/` | HCP Young Adult structural inputs |
 | `source_data/ds004752/` | local OpenNeuro ds004752 release |
 | `source_data/derivatives/` | structural derivatives generated from source imaging |

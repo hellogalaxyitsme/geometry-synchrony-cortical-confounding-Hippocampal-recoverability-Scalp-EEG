@@ -6,11 +6,10 @@ for the manuscript
 > The role of geometry, synchrony, and cortical confounding in the recoverability of
 > hippocampal activity from scalp EEG
 
-The release is intentionally code-only. It does not redistribute source datasets, cohort or
-participant manifests, participant-level derived results, manuscript sources, or publication
-figure-generation utilities. Frozen study configurations, permitted derived materials and
-their provenance are supplied through the archive identified in the manuscript's Data
-availability statement and remain subject to the source datasets' access conditions.
+This repository provides the analysis code, code-level validation tests, a synthetic validation
+fixture and environment specifications. It does not redistribute source datasets, cohort or
+participant manifests, participant-level outputs, manuscript sources, or publication
+figure-generation utilities.
 
 ## Analysis overview
 
@@ -52,12 +51,12 @@ This verifies every manifest hash, scans the public tree for credentials and pri
 parses the Python modules, imports dependency-light components, and runs the theorem and
 synthetic limiting-case checks. It does not require restricted source datasets.
 
-## Reproducing the reported analyses
+## Running the analysis code
 
-Obtain the frozen configuration/cohort bundle and permitted derived materials from the
-archive cited in the manuscript, arrange the source datasets as described in
-`DATA_ACCESS.md`, and follow the workflow map in `REPRODUCIBILITY.md`. Each entry point lists
-its exact command-line interface under `--help`.
+Arrange source datasets available to you as described in `DATA_ACCESS.md` and follow the
+workflow map in `REPRODUCIBILITY.md`. This repository does not contain study datasets or
+generated study outputs. Each entry point lists its command-line interface under `--help`
+and accepts explicit local input and output paths.
 
 ## Citing this release
 
