@@ -41,23 +41,9 @@ h5py 3.16.0, nibabel 5.4.2 and MNE-Python 1.10.2; see `environment/`. A GPU is n
 for the numerical analyses, although regenerating structural derivatives can benefit from
 accelerated computing.
 
-## Quick validation
-
-```bash
-python validate_release.py
-```
-
-This verifies every manifest hash, scans the public tree for credentials and private paths,
-parses the Python modules, imports dependency-light components, and runs the theorem and
-synthetic limiting-case checks. It does not require restricted source datasets.
-
 ## Running the analysis code
 
 Arrange source datasets available to you as described in `DATA_ACCESS.md` and follow the
 workflow map in `REPRODUCIBILITY.md`. This repository does not contain study datasets or
 generated study outputs. Each entry point lists its command-line interface under `--help`
 and accepts explicit local input and output paths.
-
-## Citing this release
-
-See `CITATION.cff`.
